@@ -1,0 +1,166 @@
+{
+  "announcements": [
+    {
+      "_id": "1765611455120",
+      "title": "Welcome to New Academic Year",
+      "body": "School reopens on January 15, 2024 with new facilities.",
+      "type": "news",
+      "publishedAt": "2025-12-13T07:37:35.120Z",
+      "isActive": true,
+      "createdAt": "2025-12-13T07:37:35.121Z",
+      "updatedAt": "2025-12-13T07:37:35.121Z"
+    },
+    {
+      "_id": "1765797608862",
+      "title": "Republic Day Celebration 2026",
+      "body": "Students who are interested to take part in republic day celebration are requested to give their name to respective class teachers.",
+      "type": "event",
+      "publishedAt": "2025-12-15T11:20:08.862Z",
+      "isActive": true,
+      "createdAt": "2025-12-15T11:20:08.863Z",
+      "updatedAt": "2025-12-15T11:20:08.863Z"
+    }
+  ],
+  "teachers": [
+    {
+      "_id": "1765611455123",
+      "name": "Dr. Sarah Johnson",
+      "qualification": "Ph.D. in Education, M.Sc. Physics",
+      "designation": "Principal & Physics Professor",
+      "section": "Administration",
+      "subjects": [
+        "Physics",
+        "Educational Leadership"
+      ],
+      "experience": 15,
+      "photoUrl": "default-teacher.jpg",
+      "isActive": true,
+      "createdAt": "2025-12-13T07:37:35.123Z",
+      "updatedAt": "2025-12-13T07:37:35.123Z"
+    },
+    {
+      "_id": "1765982985330",
+      "name": "Mrs. Priya Verma",
+      "qualification": "BSc. Arts",
+      "designation": "Mathematical ",
+      "section": "Middle",
+      "subjects": [
+        "Mathematics",
+        "Gk",
+        "Computer"
+      ],
+      "experience": 8,
+      "photoUrl": "default-teacher.jpg",
+      "isActive": true,
+      "createdAt": "2025-12-17T14:49:45.330Z",
+      "updatedAt": "2025-12-17T14:49:45.330Z"
+    },
+    {
+      "_id": "1765983059830",
+      "name": "Mr. Amit Kumar Singh",
+      "qualification": "BSc. Arts",
+      "designation": "Administrative Head",
+      "section": "Primary",
+      "subjects": [],
+      "experience": 18,
+      "photoUrl": "default-teacher.jpg",
+      "isActive": true,
+      "createdAt": "2025-12-17T14:50:59.830Z",
+      "updatedAt": "2025-12-17T14:50:59.830Z"
+    }
+  ],
+  "galleryAlbums": [
+    {
+      "_id": "1",
+      "name": "Annual Sports Day 2024",
+      "slug": "annual-sports-day-2024",
+      "description": "Photos from our annual sports day event",
+      "coverImageUrl": "https://images.unsplash.com/photo-1549060279-7e168fce7090?w=800",
+      "photos": [
+        "https://images.unsplash.com/photo-1549060279-7e168fce7090?w=800",
+        "https://images.unsplash.com/photo-1543321269-9d86d3680e1c?w-800",
+        "https://images.unsplash.com/photo-1543321269-83f5f8c0c869?w=800"
+      ],
+      "createdAt": "2025-12-13T07:40:28.339Z",
+      "updatedAt": "2025-12-13T07:40:28.340Z"
+    },
+    {
+      "_id": "2",
+      "name": "Science Fair Exhibition",
+      "slug": "science-fair-exhibition",
+      "description": "Students showcasing their science projects",
+      "coverImageUrl": "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800",
+      "photos": [
+        "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800",
+        "https://images.unsplash.com/photo-1530026405189-1d5b2b3b3b3b?w=800",
+        "https://images.unsplash.com/photo-1530026405189-1d5b2b3b3b3c?w=800"
+      ],
+      "createdAt": "2025-12-13T07:40:28.342Z",
+      "updatedAt": "2025-12-13T07:40:28.342Z"
+    },
+    {
+      "_id": "3",
+      "name": "Cultural Fest 2024",
+      "slug": "cultural-fest-2024",
+      "description": "Annual cultural festival celebrations",
+      "coverImageUrl": "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800",
+      "photos": [
+        "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800",
+        "https://images.unsplash.com/photo-1511795409834-ef04bbd61623?w=800",
+        "https://images.unsplash.com/photo-1511795409834-ef04bbd61624?w=800"
+      ],
+      "createdAt": "2025-12-13T07:40:28.344Z",
+      "updatedAt": "2025-12-13T07:40:28.344Z"
+    }
+  ],
+  "contactMessages": [
+    {
+      "_id": "1765612623843",
+      "name": "John Smith",
+      "email": "john.smith@example.com",
+      "phone": "+1 (555) 123-4567",
+      "subject": "Admission Inquiry",
+      "message": "I would like to inquire about the admission process for the upcoming academic year for my son in grade 6.",
+      "category": "Admissions",
+      "isRead": false,
+      "createdAt": "2025-12-13T07:57:03.843Z",
+      "updatedAt": "2025-12-13T07:57:03.845Z"
+    },
+    {
+      "_id": "1765612623847",
+      "name": "Maria Garcia",
+      "email": "maria.garcia@example.com",
+      "phone": "+1 (555) 987-6543",
+      "subject": "Parent Feedback",
+      "message": "I'm very impressed with the recent improvements in the school library facilities. Thank you for your efforts.",
+      "category": "Feedback",
+      "isRead": false,
+      "createdAt": "2025-12-13T07:57:03.847Z",
+      "updatedAt": "2025-12-13T07:57:03.847Z"
+    },
+    {
+      "_id": "1765612623849",
+      "name": "Robert Wilson",
+      "email": "robert.wilson@example.com",
+      "phone": "+1 (555) 456-7890",
+      "subject": "Transportation Service",
+      "message": "I would like to know about the school bus routes and timings for the new academic year.",
+      "category": "Transport",
+      "isRead": true,
+      "createdAt": "2025-12-13T07:57:03.849Z",
+      "updatedAt": "2025-12-13T07:57:03.851Z"
+    },
+    {
+      "_id": "1766068523973",
+      "name": "Rajiv Ranjan",
+      "email": "0101rajivranjan@gmail.com",
+      "phone": "",
+      "subject": "To contact for admission",
+      "message": "Hello sir, whatsuuppp???",
+      "createdAt": "2025-12-18T14:35:23.974Z",
+      "updatedAt": "2025-12-18T14:35:23.974Z",
+      "status": "unread",
+      "isRead": false
+    }
+  ]
+}
