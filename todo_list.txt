@@ -1,0 +1,73 @@
+================================================================================
+KBS PUBLIC SCHOOL (GAURA GARHI, RAEBARELI) - PRODUCTION AUDIT & TODO LIST
+================================================================================
+Generated based on Professional Web Standards & Comprehensive Audit Checklist
+
+PRIORITY P0: CRITICAL BLOCKERS & MISSING CORE FEATURES
+--------------------------------------------------------------------------------
+[x] 1. Initialize Git repository and link to origin (https://github.com/Pvs64/school_website-KBS)
+[x] 2. Secure Admin Panel:
+       - Implement password-protected authentication for /admin route
+       - Add session management, logout, and protected API endpoints
+       - Prevent unauthorized public access or data manipulation
+[x] 3. Fix Missing Pages & Broken Links:
+       - Implement complete "Academics" page (curriculum wings, facilities, assessment, FAQs)
+       - Add dedicated "Announcements / Notices" page (/announcements) linked from Home
+       - Add custom 404 "Page Not Found" with helpful navigation back to safe pages
+       - Add Events link in Navbar & Footer quick links
+       - Fix AlbumDetail.jsx: replace hardcoded single mock album with dynamic slug/id
+         lookup from API + comprehensive fallback + full-screen lightbox
+[x] 4. Online Admission Application Flow:
+       - Replace placeholder "Apply Now" button with working interactive Online Admission Form
+       - Implement full application lifecycle (student info, parent info, grade, medical/transport)
+       - Save applications to backend with unique Application ID (e.g., KBS-2026-XXXX)
+       - Provide printable/downloadable PDF admission receipt using jsPDF
+
+PRIORITY P1: BACKEND, DATA INTEGRITY & REALISTIC SEED DATA
+--------------------------------------------------------------------------------
+[x] 5. Backend API Completeness:
+       - Implement full CRUD operations for:
+         * /api/announcements (GET, POST, PUT, DELETE)
+         * /api/teachers (GET, POST, PUT, DELETE)
+         * /api/gallery (GET, POST, PUT, DELETE)
+         * /api/contact (GET, POST, DELETE, status toggle: read/unread)
+         * /api/admissions (GET, POST, PUT status update, DELETE)
+       - Implement /api/health, /api/stats, and /api/admin/login endpoints
+       - Add server-side validation, error handling, CORS safeguards, security headers
+[x] 6. Comprehensive Realistic Fake Data (data.json & fallbackData.js):
+       - School identity: KBS Public School, Gaura Garhi, Raebareli, UP (CBSE Affiliated, UDISE: 9281002502)
+       - 8+ Diverse Announcements (Academic, Sports, Holidays, Competitions, Circulars)
+       - 12+ Realistic Faculty Profiles across Pre-Primary, Primary, Middle, Secondary & Admin
+       - 6+ Rich Gallery Albums with verified education/school photography
+       - Realistic Contact inquiries and Admission applications with various statuses
+
+PRIORITY P2: FRONTEND & UX RESILIENCE, COLOR THEME & POLISH
+--------------------------------------------------------------------------------
+[x] 7. Offline/Resilient Fallback System:
+       - Provide instantaneous client-side fallback data if backend server is starting or unreachable
+       - Ensure zero blank screens, graceful retry states, and friendly notifications
+[x] 8. Brand & Geographic Information Consistency:
+       - Standardize school address across all pages (Fixed stray "Delhi" placeholder in Admissions)
+       - Standardize contact numbers (+91 80522 42453 / +91 99196 88800) and email (kbsps@gmail.com)
+       - Maintain royal blue (#1e3a8a), indigo, purple gradient & golden/amber theme
+[x] 9. Full-Featured Admin Dashboard:
+       - Stats summary tiles (Total Teachers, Active Announcements, Photo Albums, Pending Inquiries, New Admissions)
+       - Manage Announcements (Add new, delete, filter)
+       - Manage Teachers (Add new, view directory, delete)
+       - Manage Inquiries & Applications (Review, change status, filter, delete)
+
+PRIORITY P3: ACCESSIBILITY, SEO, PERFORMANCE & DEPLOYMENT
+--------------------------------------------------------------------------------
+[x] 10. SEO & Accessibility:
+        - Upgrade index.html with meta descriptions, keywords, OpenGraph tags, Schema.org JSON-LD
+        - Plus Jakarta Sans & Inter typography
+        - Semantic HTML landmarks, aria-labels for buttons and interactive components
+        - Keyboard accessible modals, visible focus outlines
+[x] 11. Testing & Validation:
+        - Run frontend build (npm run build) to ensure zero syntax/bundle errors
+        - Verify backend endpoints with automated test script (test-api.ps1)
+        - Verify frontend components with test-frontend.ps1
+[ ] 12. Git Commit & Push:
+        - Stage all changes with meaningful, structured commit messages
+        - Push verified production-ready codebase to https://github.com/Pvs64/school_website-KBS
+================================================================================
