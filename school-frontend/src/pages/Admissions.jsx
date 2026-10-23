@@ -1,4 +1,4 @@
-﻿import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion, useInView, useScroll, useTransform } from "framer-motion";
 import {
   ArrowLeft,
@@ -36,6 +36,7 @@ import {
   Home,
 } from "lucide-react";
 import { Link } from "react-router-dom";
+import AdmissionModal from "../components/common/AdmissionModal";
 
 // Animation variants
 const fadeInUp = {
@@ -269,15 +270,16 @@ const feeCategories = [
 
 // Important dates
 const importantDates = [
-  { event: "Admission Process Starts", date: "December 1, 2024", status: "Upcoming" },
-  { event: "Last Date for Applications", date: "February 28, 2025", status: "Open" },
-  { event: "Entrance Tests", date: "March 15-20, 2025", status: "Scheduled" },
-  { event: "Result Declaration", date: "March 25, 2025", status: "Pending" },
-  { event: "Admission Confirmation", date: "April 10, 2025", status: "Pending" },
-  { event: "Academic Session Begins", date: "April 15, 2025", status: "Pending" },
+  { event: "Admission Registration Starts", date: "January 15, 2026", status: "Open" },
+  { event: "Prospectus Submission Window", date: "February 01 - March 15, 2026", status: "Open" },
+  { event: "Parent & Child Interaction", date: "March 18 - 22, 2026", status: "Upcoming" },
+  { event: "Selected Candidates Merit List", date: "March 26, 2026", status: "Upcoming" },
+  { event: "Fee Deposit & Confirmation", date: "March 27 - 31, 2026", status: "Upcoming" },
+  { event: "New Academic Session Begins", date: "April 06, 2026", status: "Upcoming" },
 ];
 
 const Admissions = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
   const heroRef = useRef(null);
   const processRef = useRef(null);
   const classesRef = useRef(null);
@@ -368,20 +370,20 @@ const Admissions = () => {
                 transition={{ delay: 0.5 }}
                 className="flex flex-wrap gap-4"
               >
+                <button
+                  onClick={() => setIsModalOpen(true)}
+                  className="group inline-flex items-center px-6 py-3 rounded-xl bg-gradient-to-r from-yellow-400 to-amber-500 text-gray-900 text-sm font-bold hover:from-yellow-500 hover:to-amber-600 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl shadow-lg"
+                >
+                  Apply Online Now (2026-27)
+                  <Sparkles className="ml-2 group-hover:scale-110 transition-transform" size={18} />
+                </button>
                 <a
                   href="#process"
-                  className="group inline-flex items-center px-6 py-3 rounded-xl bg-gradient-to-r from-yellow-400 to-amber-500 text-gray-900 text-sm font-semibold hover:from-yellow-500 hover:to-amber-600 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl"
+                  className="group inline-flex items-center px-6 py-3 rounded-xl border-2 border-white/30 text-white text-sm font-semibold hover:border-white/60 hover:bg-white/10 transition-all duration-300 transform hover:-translate-y-1"
                 >
                   View Admission Process
                   <ChevronDown className="ml-2 group-hover:translate-y-1 transition-transform" size={18} />
                 </a>
-                <Link
-                  to="/contact"
-                  className="group inline-flex items-center px-6 py-3 rounded-xl border-2 border-white/30 text-white text-sm font-semibold hover:border-white/60 hover:bg-white/10 transition-all duration-300 transform hover:-translate-y-1"
-                >
-                  Schedule a Visit
-                  <ChevronRight className="ml-2 group-hover:translate-x-1 transition-transform" size={18} />
-                </Link>
               </motion.div>
             </div>
             
@@ -906,34 +908,40 @@ const Admissions = () => {
                 and become part of a community that values knowledge, character, and innovation.
               </p>
               <div className="flex flex-wrap justify-center gap-4">
-                <Link
-                  to="/contact"
-                  className="group inline-flex items-center px-8 py-3 rounded-xl bg-gradient-to-r from-yellow-400 to-amber-500 text-gray-900 font-semibold hover:from-yellow-500 hover:to-amber-600 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl"
+                <button
+                  onClick={() => setIsModalOpen(true)}
+                  className="group inline-flex items-center px-8 py-3 rounded-xl bg-gradient-to-r from-yellow-400 to-amber-500 text-gray-900 font-bold hover:from-yellow-500 hover:to-amber-600 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl shadow-lg"
                 >
-                  Apply Now
-                  <ArrowLeft className="ml-2 rotate-180 group-hover:translate-x-2 transition-transform" size={20} />
-                </Link>
+                  Apply Online Now
+                  <Sparkles className="ml-2 text-gray-950" size={20} />
+                </button>
                 <a
-                  href="tel:+917086063500"
+                  href="tel:+918052242453"
                   className="group inline-flex items-center px-8 py-3 rounded-xl border-2 border-white/30 text-white font-semibold hover:border-white/60 hover:bg-white/10 transition-all duration-300 transform hover:-translate-y-1"
                 >
                   <Phone size={20} className="mr-2" />
-                  Call: +91‑7086063500
+                  Call: +91 80522 42453
                 </a>
-                <button className="group inline-flex items-center px-8 py-3 rounded-xl border-2 border-white/30 text-white font-semibold hover:border-white/60 hover:bg-white/10 transition-all duration-300 transform hover:-translate-y-1">
+                <a
+                  href="mailto:kbsps@gmail.com"
+                  className="group inline-flex items-center px-8 py-3 rounded-xl border-2 border-white/30 text-white font-semibold hover:border-white/60 hover:bg-white/10 transition-all duration-300 transform hover:-translate-y-1"
+                >
                   <Mail size={20} className="mr-2" />
                   Email Admissions
-                </button>
+                </a>
               </div>
               <div className="mt-8 pt-8 border-t border-white/20">
                 <p className="text-sm text-blue-200">
-                  Visit our school campus: Sector 5, RK Puram, Delhi | Mon-Sat: 8:30 AM - 3:00 PM
+                  Visit our school campus: Gaura Garhi, Raebareli, Uttar Pradesh 229204 | Mon-Sat: 8:00 AM - 1:30 PM
                 </p>
               </div>
             </motion.div>
           </div>
         </div>
       </section>
+
+      {/* Online Admission Application Modal */}
+      <AdmissionModal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} />
     </div>
   );
 };

@@ -1,0 +1,470 @@
+// Comprehensive fallback data for KBS Public School (Gaura Garhi, Raebareli, UP)
+// Ensures the frontend functions flawlessly with realistic content even if backend is offline.
+
+export const fallbackAnnouncements = [
+  {
+    _id: "ann-101",
+    title: "Admissions Open for Session 2026-27 (Nursery to Class VIII)",
+    body: "Registrations are officially open for the academic session 2026-27. Parents and guardians can apply online through our website portal or collect the prospectus from the school administrative office between 8:30 AM and 1:30 PM (Mon-Sat). Limited seats available per section.",
+    type: "news",
+    category: "Admissions",
+    priority: "high",
+    publishedAt: "2026-02-15T09:00:00.000Z",
+    isActive: true
+  },
+  {
+    _id: "ann-102",
+    title: "Annual Final Term Examination Date Sheet 2026",
+    body: "The final annual examination for Classes I to VIII is scheduled from March 02, 2026 to March 16, 2026. Admit cards and syllabus outlines have been distributed. Detailed subject-wise timetable is available on the school notice board and the Academics section.",
+    type: "academic",
+    category: "Examination",
+    priority: "high",
+    publishedAt: "2026-02-10T10:30:00.000Z",
+    isActive: true
+  },
+  {
+    _id: "ann-103",
+    title: "Inter-School Science & Innovation Fair 'Vigyan Mela 2026'",
+    body: "Students from Classes IV to VIII will present working models on renewable energy, smart agriculture, and robotics on Saturday, February 28, 2026. Parents are warmly invited to attend the project demonstration exhibition in the main school auditorium.",
+    type: "event",
+    category: "Event",
+    priority: "normal",
+    publishedAt: "2026-02-05T08:15:00.000Z",
+    isActive: true
+  },
+  {
+    _id: "ann-104",
+    title: "77th Republic Day Celebrations & Annual Merit Awards",
+    body: "KBS Public School celebrated the 77th Republic Day with patriotic flag hoisting, cultural dances, martial arts demonstrations, and distribution of merit certificates to academic and athletic toppers across all grades.",
+    type: "event",
+    category: "Celebration",
+    priority: "normal",
+    publishedAt: "2026-01-26T11:00:00.000Z",
+    isActive: true
+  },
+  {
+    _id: "ann-105",
+    title: "Special Winter Vacation & Cold Wave Timings Notice",
+    body: "In accordance with local district administration guidelines, school timings for the month of January were adjusted to 9:30 AM to 2:30 PM. Regular summer timings (8:00 AM to 1:30 PM) will resume from March 1st.",
+    type: "holiday",
+    category: "General",
+    priority: "normal",
+    publishedAt: "2026-01-12T07:45:00.000Z",
+    isActive: true
+  },
+  {
+    _id: "ann-106",
+    title: "Inauguration of New STEM Robotics & Composite Science Lab",
+    body: "We are proud to announce the opening of our upgraded Composite Science Lab and hands-on STEM Robotics center equipped with experiential learning kits, digital microscopes, and IoT hardware to empower students with modern technological skills.",
+    type: "news",
+    category: "Infrastructure",
+    priority: "high",
+    publishedAt: "2025-12-28T09:30:00.000Z",
+    isActive: true
+  },
+  {
+    _id: "ann-107",
+    title: "Parent-Teacher Meeting (PTM) for Term-II Assessment",
+    body: "Mandatory PTM for all parents of Nursery to Class VIII will take place on Saturday, March 21, 2026 from 9:00 AM to 12:30 PM. Final progress cards will be handed over alongside one-on-one counseling with class teachers.",
+    type: "event",
+    category: "PTM",
+    priority: "high",
+    publishedAt: "2025-12-20T10:00:00.000Z",
+    isActive: true
+  },
+  {
+    _id: "ann-108",
+    title: "National Mathematics Day Quiz Winners Announced",
+    body: "Congratulations to Ramanujan House for clinching the 1st position in the Inter-House Mathematics Olympiad 2025. Medals and special encyclopedias were awarded to top performing students from Classes V to VIII.",
+    type: "news",
+    category: "Academic",
+    priority: "normal",
+    publishedAt: "2025-12-22T14:00:00.000Z",
+    isActive: true
+  }
+];
+
+export const fallbackTeachers = [
+  {
+    _id: "tch-101",
+    name: "Dr. Sarah Johnson",
+    qualification: "Ph.D. in Education, M.Sc. Physics, B.Ed.",
+    designation: "Principal & Senior Academic Advisor",
+    section: "Administration",
+    subjects: ["Physics", "Educational Leadership", "Science Ethics"],
+    experience: 18,
+    email: "principal@kbsps.com",
+    phone: "+91 80522 42453",
+    photoUrl: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&auto=format&fit=crop&q=80",
+    bio: "Dr. Johnson holds a doctorate in educational pedagogy with 18+ years of leadership in CBSE-affiliated institutions. She champions conceptual learning and moral discipline.",
+    achievements: "National CBSE Best Educator Award nominee; Published 6 research papers on STEM pedagogy in rural & semi-urban education.",
+    isActive: true
+  },
+  {
+    _id: "tch-102",
+    name: "Mr. Amit Kumar Singh",
+    qualification: "M.A. English Literature, B.Ed., PGDCA",
+    designation: "Administrative Head & Middle Wing Coordinator",
+    section: "Administration",
+    subjects: ["English Language", "Communication Skills", "Value Education"],
+    experience: 16,
+    email: "amit.singh@kbsps.com",
+    phone: "+91 99196 88800",
+    photoUrl: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&auto=format&fit=crop&q=80",
+    bio: "Over 16 years of dedication to student mentoring and campus administration at KBS Public School, ensuring high institutional standards and student welfare.",
+    achievements: "Key architect of KBS Digital School Management initiative; Regional Debate Chief Adjudicator.",
+    isActive: true
+  },
+  {
+    _id: "tch-103",
+    name: "Mrs. Priya Verma",
+    qualification: "M.Sc. Mathematics, B.Ed.",
+    designation: "Head of Mathematics Department",
+    section: "Middle",
+    subjects: ["Mathematics", "Mental Math & Vedic Math", "Reasoning"],
+    experience: 11,
+    email: "priya.verma@kbsps.com",
+    phone: "+91 80522 42453",
+    photoUrl: "https://images.unsplash.com/photo-1580894732444-8ecded7900cd?w=400&auto=format&fit=crop&q=80",
+    bio: "Specializes in demystifying mathematics through real-world applications, logic puzzles, and active math lab simulations.",
+    achievements: "Mentored 40+ state level Ramanujan Math Olympiad medalists over the past 5 years.",
+    isActive: true
+  },
+  {
+    _id: "tch-104",
+    name: "Mr. Rajesh Pandey",
+    qualification: "M.Sc. Physics, B.Ed., NET Qualified",
+    designation: "Senior Science & Physics Faculty",
+    section: "Middle",
+    subjects: ["Physics", "General Science", "Astronomy"],
+    experience: 14,
+    email: "rajesh.pandey@kbsps.com",
+    phone: "+91 80522 42453",
+    photoUrl: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&auto=format&fit=crop&q=80",
+    bio: "Passionate science educator who guides young learners in physics experiments, scientific reasoning, and amateur astronomy observations.",
+    achievements: "District Science Exhibition 1st Prize Mentor (2023, 2024, 2025).",
+    isActive: true
+  },
+  {
+    _id: "tch-105",
+    name: "Ms. Ananya Sharma",
+    qualification: "M.A. English Literature, B.Ed., Cambridge CELTA",
+    designation: "English Faculty & Literary Club Head",
+    section: "Middle",
+    subjects: ["English Literature", "Grammar & Composition", "Creative Writing"],
+    experience: 9,
+    email: "ananya.sharma@kbsps.com",
+    phone: "+91 80522 42453",
+    photoUrl: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&auto=format&fit=crop&q=80",
+    bio: "Focuses on public speaking, phonetics, and building deep comprehension skills through interactive library reading sessions.",
+    achievements: "Founder of the KBS Annual Interschool Literary Fest; published poet in national journals.",
+    isActive: true
+  },
+  {
+    _id: "tch-106",
+    name: "Mr. Vikramaditya Rathore",
+    qualification: "M.A. History & Political Science, B.Ed.",
+    designation: "Social Studies & Heritage Mentor",
+    section: "Middle",
+    subjects: ["History", "Civics & Constitution", "Geography"],
+    experience: 12,
+    email: "vikram.rathore@kbsps.com",
+    phone: "+91 80522 42453",
+    photoUrl: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&auto=format&fit=crop&q=80",
+    bio: "Brings history and social structures alive with interactive role-play mock parliaments and historical heritage field trips.",
+    achievements: "Spearheaded KBS Model United Nations (MUN) and Youth Parliament simulation.",
+    isActive: true
+  },
+  {
+    _id: "tch-107",
+    name: "Mrs. Sunita Mishra",
+    qualification: "M.A. Hindi, B.Ed., Sahitya Ratna",
+    designation: "Primary Wing Supervisor & Hindi Faculty",
+    section: "Primary",
+    subjects: ["Hindi", "Sanskrit Basics", "Moral Science"],
+    experience: 15,
+    email: "sunita.mishra@kbsps.com",
+    phone: "+91 80522 42453",
+    photoUrl: "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&auto=format&fit=crop&q=80",
+    bio: "Guides children through the beauty of Hindi literature, Vedic shlokas, and foundational ethical values with warmth and kindness.",
+    achievements: "15 consecutive years of excellence in primary foundational literacy; organized district-level Hindi poetry recitation.",
+    isActive: true
+  },
+  {
+    _id: "tch-108",
+    name: "Mr. Mohammad Tariq",
+    qualification: "MCA, B.Tech CSE, Google Certified Educator",
+    designation: "Head of Computer Science & Robotics Lab",
+    section: "Middle",
+    subjects: ["Computer Applications", "Scratch & Python Coding", "Cyber Safety"],
+    experience: 8,
+    email: "m.tariq@kbsps.com",
+    phone: "+91 80522 42453",
+    photoUrl: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&auto=format&fit=crop&q=80",
+    bio: "Inspires students to be creators rather than consumers of technology. Teaches logic building, algorithms, and practical programming.",
+    achievements: "Led student team to 2nd prize at National Junior Coding Hackathon 2024.",
+    isActive: true
+  },
+  {
+    _id: "tch-109",
+    name: "Ms. Kavita Saxena",
+    qualification: "M.Sc. Environmental Science, B.Ed.",
+    designation: "Primary Science & Eco-Club Coordinator",
+    section: "Primary",
+    subjects: ["Environmental Studies (EVS)", "General Science", "Nature Studies"],
+    experience: 7,
+    email: "kavita.saxena@kbsps.com",
+    phone: "+91 80522 42453",
+    photoUrl: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&auto=format&fit=crop&q=80",
+    bio: "Dedicated to hands-on environmental education, school organic kitchen garden, and water conservation projects with children.",
+    achievements: "Earned KBS Public School the Green Campus Eco-Warrior Accreditation in 2025.",
+    isActive: true
+  },
+  {
+    _id: "tch-110",
+    name: "Mr. Devendra Yadav",
+    qualification: "M.P.Ed., NIS Certified Coach, National Athlete",
+    designation: "Director of Physical Education & Sports",
+    section: "Middle",
+    subjects: ["Physical Education", "Athletics & Track", "Yoga & Martial Arts"],
+    experience: 10,
+    email: "devendra.sports@kbsps.com",
+    phone: "+91 80522 42453",
+    photoUrl: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&auto=format&fit=crop&q=80",
+    bio: "Former state-level 400m sprinter. Cultivates teamwork, physical fitness, discipline, and competitive sportsmanship among all pupils.",
+    achievements: "Coached 12 student champions in CBSE Regional Kho-Kho, Kabaddi and Athletics meets.",
+    isActive: true
+  },
+  {
+    _id: "tch-111",
+    name: "Mrs. Meenakshi Joshi",
+    qualification: "NTT Certified, B.A. Child Psychology",
+    designation: "Pre-Primary Wing Head (Nursery/KG)",
+    section: "Pre-Primary",
+    subjects: ["Early Phonics", "Play & Motor Skills", "Storytelling & Rhymes"],
+    experience: 9,
+    email: "meenakshi.joshi@kbsps.com",
+    phone: "+91 80522 42453",
+    photoUrl: "https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?w=400&auto=format&fit=crop&q=80",
+    bio: "Expert in Montessori and play-way methods, ensuring every toddler feels secure, loved, and eager to explore the world of learning.",
+    achievements: "Designed the innovative 'WonderYears' play-curriculum adopted across foundational grades.",
+    isActive: true
+  },
+  {
+    _id: "tch-112",
+    name: "Mr. Sandeep Roy",
+    qualification: "Master of Fine Arts (MFA), B.Ed.",
+    designation: "Art, Craft & Design Mentor",
+    section: "Primary",
+    subjects: ["Visual Arts", "Sketching & Painting", "Clay Modeling & Origami"],
+    experience: 6,
+    email: "sandeep.art@kbsps.com",
+    phone: "+91 80522 42453",
+    photoUrl: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?w=400&auto=format&fit=crop&q=80",
+    bio: "Nurtures artistic expression, color theory, and traditional Indian folk art (Madhubani, Warli) among primary and middle school students.",
+    achievements: "Curator of the Annual KBS Young Artists Gallery; State Kala Utsav award recipient.",
+    isActive: true
+  }
+];
+
+export const fallbackGalleryAlbums = [
+  {
+    _id: "alb-1",
+    name: "Annual Sports Meet 2025",
+    slug: "annual-sports-meet-2025",
+    description: "An electrifying celebration of fitness, team spirit, and athletic triumphs. Over 400 students participated in sprint races, long jump, tug-of-war, and relay championships.",
+    category: "Sports",
+    coverImageUrl: "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=800&auto=format&fit=crop&q=80",
+    photos: [
+      "https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1549060279-7e168fce7090?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1517649763962-0c623266ddc0?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1574629810360-7efbbe195018?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1517466787929-bc90951d0974?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1526676037777-05a232554f77?w=800&auto=format&fit=crop&q=80"
+    ],
+    tags: ["sports", "athletics", "competition", "fitness"],
+    eventDate: "2025-11-20",
+    createdAt: "2025-11-22T10:00:00.000Z"
+  },
+  {
+    _id: "alb-2",
+    name: "Science & Innovation Fair 'Vigyan Mela'",
+    slug: "science-innovation-fair-vigyan-mela",
+    description: "Young innovators showcasing solar city models, robotic arm prototypes, rainwater harvesting systems, and interactive chemical reaction setups.",
+    category: "Science",
+    coverImageUrl: "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&auto=format&fit=crop&q=80",
+    photos: [
+      "https://images.unsplash.com/photo-1532094349884-543bc11b234d?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1581092160607-ee22621dd758?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1562774053-701939374585?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1507668077129-56e32842fceb?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&auto=format&fit=crop&q=80"
+    ],
+    tags: ["science", "stem", "robotics", "exhibition"],
+    eventDate: "2025-10-18",
+    createdAt: "2025-10-20T10:00:00.000Z"
+  },
+  {
+    _id: "alb-3",
+    name: "Annual Cultural Fest 'Tarang 2025'",
+    slug: "annual-cultural-fest-tarang-2025",
+    description: "A dazzling evening of classical Kathak, folk dances, patriotic choruses, drama, and instrumental musical renditions by the talented students of KBS.",
+    category: "Cultural",
+    coverImageUrl: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&auto=format&fit=crop&q=80",
+    photos: [
+      "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1465847899084-d164df4dedc6?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=800&auto=format&fit=crop&q=80"
+    ],
+    tags: ["cultural", "dance", "drama", "music"],
+    eventDate: "2025-12-14",
+    createdAt: "2025-12-16T10:00:00.000Z"
+  },
+  {
+    _id: "alb-4",
+    name: "Republic Day & Independence Day Ceremonies",
+    slug: "republic-day-independence-day-ceremonies",
+    description: "Patriotic parade, flag hoisting ceremonies by the Principal and Administrative Head, accompanied by student band melodies and freedom fighter tributes.",
+    category: "Celebrations",
+    coverImageUrl: "https://images.unsplash.com/photo-1532375810709-75b1da00537c?w=800&auto=format&fit=crop&q=80",
+    photos: [
+      "https://images.unsplash.com/photo-1532375810709-75b1da00537c?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1569437061241-a848be43cc82?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1541829070764-84a7d30dd3f3?w=800&auto=format&fit=crop&q=80"
+    ],
+    tags: ["patriotism", "republicday", "flaghoisting"],
+    eventDate: "2026-01-26",
+    createdAt: "2026-01-27T10:00:00.000Z"
+  },
+  {
+    _id: "alb-5",
+    name: "Art, Craft & Creative Expression Gallery",
+    slug: "art-craft-creative-expression-gallery",
+    description: "Showcasing student paintings, handmade clay sculptures, rangoli designs, and waste-to-wonder recycled art installations.",
+    category: "Cultural",
+    coverImageUrl: "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=800&auto=format&fit=crop&q=80",
+    photos: [
+      "https://images.unsplash.com/photo-1513364776144-60967b0f800f?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1460518451282-c92330f24209?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1544717305-2782549b5136?w=800&auto=format&fit=crop&q=80"
+    ],
+    tags: ["art", "painting", "craft", "creativity"],
+    eventDate: "2025-09-12",
+    createdAt: "2025-09-15T10:00:00.000Z"
+  },
+  {
+    _id: "alb-6",
+    name: "Campus Life, Smart Classrooms & Library",
+    slug: "campus-life-smart-classrooms-library",
+    description: "A glimpse into modern learning environments, airy ventilated classrooms, digital projector sessions, library reading corners, and verdant green grounds.",
+    category: "Campus",
+    coverImageUrl: "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800&auto=format&fit=crop&q=80",
+    photos: [
+      "https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1523240795612-9a054b0db644?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=800&auto=format&fit=crop&q=80",
+      "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=800&auto=format&fit=crop&q=80"
+    ],
+    tags: ["campus", "library", "infrastructure", "smartclasses"],
+    eventDate: "2025-08-10",
+    createdAt: "2025-08-15T10:00:00.000Z"
+  }
+];
+
+export const fallbackAdmissions = [
+  {
+    _id: "adm-2026-01",
+    applicationNumber: "KBS-2026-101",
+    studentName: "Aarav Sharma",
+    dob: "2018-05-14",
+    gender: "Male",
+    gradeApplying: "Class II",
+    academicYear: "2026-27",
+    parentName: "Suresh Sharma",
+    parentRelation: "Father",
+    email: "suresh.sharma@example.com",
+    phone: "+91 98380 11223",
+    address: "House No. 42, Civil Lines",
+    city: "Raebareli",
+    state: "Uttar Pradesh",
+    previousSchool: "St. Jude Primary School",
+    transportRequired: true,
+    status: "Under Review",
+    notes: "Transfer certificate from previous school pending verification.",
+    submittedAt: "2026-02-16T10:30:00.000Z"
+  },
+  {
+    _id: "adm-2026-02",
+    applicationNumber: "KBS-2026-102",
+    studentName: "Ananya Patel",
+    dob: "2021-08-20",
+    gender: "Female",
+    gradeApplying: "Nursery",
+    academicYear: "2026-27",
+    parentName: "Brijesh Patel",
+    parentRelation: "Father",
+    email: "brijesh.patel@example.com",
+    phone: "+91 94155 33445",
+    address: "Village Gaura Garhi, Near Shiv Mandir",
+    city: "Raebareli",
+    state: "Uttar Pradesh",
+    previousSchool: "N/A (First Time Schooling)",
+    transportRequired: false,
+    status: "Interview Scheduled",
+    notes: "Parent-child interaction scheduled for Saturday, 28th Feb at 10:00 AM.",
+    submittedAt: "2026-02-17T11:45:00.000Z"
+  },
+  {
+    _id: "adm-2026-03",
+    applicationNumber: "KBS-2026-103",
+    studentName: "Kavya Singh",
+    dob: "2015-11-03",
+    gender: "Female",
+    gradeApplying: "Class V",
+    academicYear: "2026-27",
+    parentName: "Dhirendra Singh",
+    parentRelation: "Father",
+    email: "dhirendra.singh@example.com",
+    phone: "+91 99360 44556",
+    address: "Plot 12, Indira Nagar",
+    city: "Raebareli",
+    state: "Uttar Pradesh",
+    previousSchool: "Saraswati Shishu Mandir",
+    transportRequired: true,
+    status: "Approved",
+    notes: "Admitted on merit. Fee receipt issued.",
+    submittedAt: "2026-02-12T09:10:00.000Z"
+  }
+];
+
+export const fallbackContactMessages = [
+  {
+    _id: "msg-101",
+    name: "Ramesh Chandra Sharma",
+    email: "ramesh.sharma@gmail.com",
+    phone: "+91 94150 12345",
+    subject: "Inquiry regarding Class VI Admission Process & Syllabus",
+    message: "Respected Sir, we recently relocated to Gaura Garhi. I want to inquire about the syllabus for the entrance interaction for admission in Class VI for the 2026-27 session.",
+    category: "Admissions",
+    isRead: true,
+    createdAt: "2026-02-14T09:15:00.000Z"
+  },
+  {
+    _id: "msg-102",
+    name: "Pooja Srivastava",
+    email: "pooja.srivastava@yahoo.com",
+    phone: "+91 98390 67890",
+    subject: "School Van / Bus Service Coverage in Dalmau Road",
+    message: "Hello, could you please share the bus route schedule and stop timings for Dalmau Road and whether verified female attendants are present in junior buses?",
+    category: "Transport",
+    isRead: false,
+    createdAt: "2026-02-18T14:40:00.000Z"
+  }
+];

@@ -1,4 +1,4 @@
-﻿import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -10,6 +10,8 @@ import AlbumDetail from "./pages/AlbumDetail";
 import Contact from "./pages/Contact";
 import Admin from "./pages/admin/Admin";
 import EventsPage from "./pages/EventsPage";
+import Announcements from "./pages/Announcements";
+import NotFound from "./pages/NotFound";
 
 function App() {
   return (
@@ -24,8 +26,10 @@ function App() {
           <Route path="gallery" element={<Gallery />} />
           <Route path="gallery/:slug" element={<AlbumDetail />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="announcements" element={<Announcements />} />
+          <Route path="events" element={<EventsPage />} />
           <Route path="admin" element={<Admin />} />
-          <Route path="/events" element={<EventsPage />} />
+          <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
     </Router>

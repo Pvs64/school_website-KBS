@@ -1,4 +1,4 @@
-﻿import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import logo from "../../assets/logos/logo.png";
 import {
   Facebook,
@@ -173,31 +173,27 @@ const Footer = () => {
                 </div>
               </div>
 
-              {/* Optional quick links that also scroll top */}
-              <div className="flex flex-wrap justify-center md:justify-end gap-3 text-xs sm:text-sm text-gray-300">
-                <Link
-                  to="/"
-                  onClick={handleScrollTop}
-                  className="hover:text-white transition-colors"
-                >
-                  Home
-                </Link>
+              {/* Comprehensive quick links that also scroll top */}
+              <div className="flex flex-wrap justify-center md:justify-end gap-x-3 gap-y-1.5 text-xs sm:text-sm text-gray-300">
+                <Link to="/" onClick={handleScrollTop} className="hover:text-white transition-colors">Home</Link>
                 <span className="opacity-40">•</span>
-                <Link
-                  to="/admissions"
-                  onClick={handleScrollTop}
-                  className="hover:text-white transition-colors"
-                >
-                  Admissions
-                </Link>
+                <Link to="/about" onClick={handleScrollTop} className="hover:text-white transition-colors">About</Link>
                 <span className="opacity-40">•</span>
-                <Link
-                  to="/contact"
-                  onClick={handleScrollTop}
-                  className="hover:text-white transition-colors"
-                >
-                  Contact
-                </Link>
+                <Link to="/academics" onClick={handleScrollTop} className="hover:text-white transition-colors">Academics</Link>
+                <span className="opacity-40">•</span>
+                <Link to="/admissions" onClick={handleScrollTop} className="hover:text-white transition-colors">Admissions</Link>
+                <span className="opacity-40">•</span>
+                <Link to="/teachers" onClick={handleScrollTop} className="hover:text-white transition-colors">Teachers</Link>
+                <span className="opacity-40">•</span>
+                <Link to="/events" onClick={handleScrollTop} className="hover:text-white transition-colors">Events</Link>
+                <span className="opacity-40">•</span>
+                <Link to="/gallery" onClick={handleScrollTop} className="hover:text-white transition-colors">Gallery</Link>
+                <span className="opacity-40">•</span>
+                <Link to="/announcements" onClick={handleScrollTop} className="hover:text-white transition-colors">Notices</Link>
+                <span className="opacity-40">•</span>
+                <Link to="/contact" onClick={handleScrollTop} className="hover:text-white transition-colors">Contact</Link>
+                <span className="opacity-40">•</span>
+                <Link to="/admin" onClick={handleScrollTop} className="text-yellow-400 hover:text-yellow-300 transition-colors font-medium">Admin</Link>
               </div>
             </div>
           </div>

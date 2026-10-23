@@ -1,4 +1,4 @@
-﻿import { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import {
   Menu,
@@ -13,6 +13,8 @@ import {
   Phone,
   UserCog,
   Sparkles,
+  CalendarDays,
+  ShieldAlert,
 } from "lucide-react";
 import logo from "../../assets/logos/logo.png";
 
@@ -24,9 +26,10 @@ const Navbar = () => {
   const navItems = [
     { name: "Home", path: "/", icon: <Home size={18} /> },
     { name: "About", path: "/about", icon: <Users size={18} /> },
-    { name: "Teachers", path: "/teachers", icon: <Users size={18} /> },
     { name: "Academics", path: "/academics", icon: <BookOpen size={18} /> },
     { name: "Admissions", path: "/admissions", icon: <GraduationCap size={18} /> },
+    { name: "Teachers", path: "/teachers", icon: <Users size={18} /> },
+    { name: "Events", path: "/events", icon: <CalendarDays size={18} /> },
     { name: "Gallery", path: "/gallery", icon: <Image size={18} /> },
     { name: "Contact", path: "/contact", icon: <Phone size={18} /> },
   ];
@@ -282,7 +285,7 @@ const Navbar = () => {
                     Admissions Open
                   </h3>
                   <p className="text-sm text-blue-100 mb-5">
-                    2024-25 academic year applications are now being accepted
+                    2026-27 academic year applications are now being accepted
                   </p>
                   <div className="space-y-3">
                     <Link
@@ -306,6 +309,21 @@ const Navbar = () => {
                       Schedule Visit
                     </Link>
                   </div>
+                </div>
+
+                {/* Admin Portal Link */}
+                <div className="mb-6">
+                  <Link
+                    to="/admin"
+                    onClick={() => {
+                      setIsOpen(false);
+                      handleNavClick();
+                    }}
+                    className="flex items-center justify-center space-x-2 w-full py-2.5 px-4 rounded-xl bg-white/5 hover:bg-white/15 border border-white/10 text-xs text-blue-200 hover:text-white transition"
+                  >
+                    <UserCog size={14} />
+                    <span>School Administration Portal</span>
+                  </Link>
                 </div>
 
                 {/* Contact Info */}
